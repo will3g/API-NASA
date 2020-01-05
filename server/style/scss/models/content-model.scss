@@ -1,0 +1,37 @@
+section ul {
+    height: $height;
+    grid-gap: $grid-gap;
+    li {
+        display: $ul-li-display;
+        align-items: $ul-li-align-items;
+        justify-content: $ul-li-justify-content;
+        background: $ul-li-background-position / $ul-li-background-size;
+        background-repeat: $ul-li-background-repeat;
+        h3 {
+            background: $ul-li-h3-background;
+            color: $ul-li-h3-color;
+            width: $ul-li-h3-width;
+            padding: $ul-li-h3-padding;
+            margin-bottom: $ul-li-h3-margin-bottom;
+            text-align: $ul-li-h3-text-align;
+            font-family: $ul-li-h3-font-family-one, $ul-li-h3-font-family-two;
+            font-size: $ul-li-h3-font-size;
+        }
+        &:nth-child(1) {
+            background: $ul-li-background-nth-child-one;
+        }
+        &:nth-child(2) {
+            /* foto do dia */
+            background: $ul-li-background-nth-child-two;
+        }
+        &:nth-child(3) {
+            background: $ul-li-background-nth-child-three;
+        }
+        &:nth-child(4) {
+            background: $ul-li-background-nth-child-four;
+        }
+        &:nth-child(5) {
+            background: $ul-li-background-nth-child-five;
+        }
+    }
+}

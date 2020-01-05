@@ -1,0 +1,28 @@
+// SECTION UL
+$height: calc(100vh - 100px);
+$grid-gap: 15px;
+// SECTION UL LI
+$ul-li-display: flex;
+$ul-li-align-items: flex-end;
+$ul-li-justify-content: center;
+$ul-li-background-position: center;
+$ul-li-background-size: cover;
+$ul-li-background-repeat: no-repeat;
+// SECTION UL LI H3
+$ul-li-h3-background: rgba(0, 0, 0, .5);
+$ul-li-h3-color: #ffffffb0;
+$ul-li-h3-width: 100%;
+$ul-li-h3-padding: 5px;
+$ul-li-h3-margin-bottom: 20px;
+$ul-li-h3-text-align: center;
+$ul-li-h3-font-family-one: 'Aldrich';
+$ul-li-h3-font-family-two: sans-serif;
+$ul-li-h3-font-size: 1.1rem;
+// SECTION UL LI NTH-CHILD
+$ul-li-background-nth-child-one: url('../img/nebulosa.jpg');
+$ul-li-background-nth-child-two: url('');
+$ul-li-background-nth-child-three: url('../img/nebulosa.jpg');
+$ul-li-background-nth-child-four: url('../img/nebulosa.jpg');
+$ul-li-background-nth-child-five: url('../img/nebulosa.jpg');
+// IMPORT MODEL SCSS
+@import './content-model.scss';

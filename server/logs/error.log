@@ -56,3 +56,19 @@
 2020/01/05 14:10:17 [notice] 3968#6480: signal process started
 2020/01/05 14:10:21 [error] 9976#9388: *2 CreateFile() "C:\Users\user\Desktop\API-NASA\server/../public/server/src/js/test.js" failed (3: The system cannot find the path specified), client: 127.0.0.1, server: localhost, request: "GET /server/src/js/test.js HTTP/1.1", host: "localhost", referrer: "http://localhost/"
 2020/01/05 14:10:55 [notice] 896#7456: signal process started
+2020/01/05 14:17:24 [notice] 8140#7140: signal process started
+2020/01/05 14:18:27 [error] 10016#9304: *4 CreateFile() "C:\Users\user\Desktop\API-NASA\server/../public/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: nasa.api, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2020/01/05 14:20:01 [notice] 8652#8888: signal process started
+2020/01/05 14:20:04 [notice] 6616#6808: signal process started
+2020/01/05 14:20:04 [error] 6616#6808: CreateFile() "C:\Users\user\Desktop\API-NASA\server/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2020/01/05 14:20:06 [notice] 4784#3460: signal process started
+2020/01/05 14:20:06 [error] 4784#3460: CreateFile() "C:\Users\user\Desktop\API-NASA\server/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2020/01/05 14:20:10 [notice] 6952#9772: signal process started
+2020/01/05 14:20:10 [error] 6952#9772: CreateFile() "C:\Users\user\Desktop\API-NASA\server/logs/nginx.pid" failed (2: The system cannot find the file specified)
+2020/01/05 15:56:32 [error] 10016#9304: *43 CreateFile() "C:\Users\user\Desktop\API-NASA\server/../public/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: nasa.api, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2020/01/05 17:12:51 [error] 10016#9304: *74 CreateFile() "C:\Users\user\Desktop\API-NASA\server/../public/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: nasa.api, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2020/01/05 17:16:56 [error] 10016#9304: *78 CreateFile() "C:\Users\user\Desktop\API-NASA\server/../public/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: nasa.api, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2020/01/05 17:18:28 [error] 10016#9304: *83 CreateFile() "C:\Users\user\Desktop\API-NASA\server/../public/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: nasa.api, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2020/01/05 17:19:52 [error] 10016#9304: *89 CreateFile() "C:\Users\user\Desktop\API-NASA\server/../public/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: nasa.api, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2020/01/05 17:20:25 [error] 10016#9304: *97 CreateFile() "C:\Users\user\Desktop\API-NASA\server/../public/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: nasa.api, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"
+2020/01/05 17:25:13 [error] 10016#9304: *109 CreateFile() "C:\Users\user\Desktop\API-NASA\server/../public/favicon.ico" failed (2: The system cannot find the file specified), client: 127.0.0.1, server: nasa.api, request: "GET /favicon.ico HTTP/1.1", host: "localhost:8080", referrer: "http://localhost:8080/"

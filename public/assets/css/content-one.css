@@ -5,7 +5,7 @@ section ul {
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background: center / cover;
+    background: center/cover;
     background-repeat: no-repeat; }
     section ul li h3 {
       background: rgba(0, 0, 0, 0.5);
@@ -14,7 +14,7 @@ section ul {
       padding: 5px;
       margin-bottom: 20px;
       text-align: center;
-      font-family: 'Aldrich', sans-serif;
+      font-family: "Aldrich", sans-serif;
       font-size: 1.1rem; }
     section ul li:nth-child(1) {
       background: url("../img/nebulosa.jpg"); }
@@ -28,4 +28,4 @@ section ul {
     section ul li:nth-child(5) {
       background: url("../img/nebulosa.jpg"); }
 
-/*# sourceMappingURL=highlights-one.css.map */
+/*# sourceMappingURL=content-one.css.map */
