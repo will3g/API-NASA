@@ -1,0 +1,37 @@
+section ul {
+    height: calc(100vh - 100px);
+    grid-gap: 15px;
+    li {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background: center / cover;
+        background-repeat: no-repeat;
+        h3 {
+            background: rgba(0, 0, 0, .5);
+            color: #ffffffb0;
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Aldrich', sans-serif;
+            font-size: 1.1rem;
+        }
+        &:nth-child(1) {
+            background: url('../img/nebulosa.jpg');
+        }
+        &:nth-child(2) {
+            /* foto do dia */
+            background: url('');
+        }
+        &:nth-child(3) {
+            background: url('../img/nebulosa.jpg');
+        }
+        &:nth-child(4) {
+            background: url('../img/nebulosa.jpg');
+        }
+        &:nth-child(5) {
+            background: url('../img/nebulosa.jpg');
+        }
+    }
+}
