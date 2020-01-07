@@ -1,12 +1,12 @@
-#section-one ul {
+#section-two ul {
   grid-gap: 15px; }
-  #section-one ul li {
+  #section-two ul li {
     display: flex;
     align-items: flex-end;
     justify-content: center;
     background: center/cover;
     background-repeat: no-repeat; }
-    #section-one ul li h3 {
+    #section-two ul li h3 {
       background: rgba(0, 0, 0, 0.5);
       color: #ffffffb0;
       width: 100%;
@@ -15,16 +15,16 @@
       text-align: center;
       font-family: "Aldrich", sans-serif;
       font-size: 1.1rem; }
-    #section-one ul li:nth-child(1) {
+    #section-two ul li:nth-child(1) {
       background: url("../img/nebulosa.jpg"); }
-    #section-one ul li:nth-child(2) {
+    #section-two ul li:nth-child(2) {
       /* foto do dia */
       background: url(""); }
-    #section-one ul li:nth-child(3) {
+    #section-two ul li:nth-child(3) {
       background: url("../img/nebulosa.jpg"); }
-    #section-one ul li:nth-child(4) {
+    #section-two ul li:nth-child(4) {
       background: url("../img/nebulosa.jpg"); }
-    #section-one ul li:nth-child(5) {
+    #section-two ul li:nth-child(5) {
       background: url("../img/nebulosa.jpg"); }
 
-/*# sourceMappingURL=content-one.css.map */
+/*# sourceMappingURL=content-two.css.map */

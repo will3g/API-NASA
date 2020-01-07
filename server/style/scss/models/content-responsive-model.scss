@@ -9,6 +9,8 @@
             ul {
                 display: $ul-media-screen-539px-display;
                 flex-direction: $ul-media-screen-539px-flex-direction;
+                height: $main-section-ul-calc-height-539px;
+                margin-top: $main-section-ul-margin-top-539px;
                 li {
                     height: $ul-li-media-screen-539px-height;
                     &:nth-child(1),
@@ -33,9 +35,10 @@
     }
     main section ul {
         display: $main-section-ul-media-screen-540px-display;
-        height: $main-section-ul-media-screen-540px-height;
+        height: $main-section-ul-calc-height-540px;
         grid-template-columns: $main-section-ul-media-screen-540px-grid-template-columns;
         grid-template-rows: $main-section-ul-media-screen-540px-grid-template-rows;
+        margin-top: $main-section-ul-margin-top-540px;
         li {
             &:nth-child(1) {
                 grid-row: $main-section-ul-li-nth-child-one-media-screen-540px-grid-row;

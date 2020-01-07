@@ -7,9 +7,11 @@
       flex-direction: column; }
       body main section ul {
         display: flex;
-        flex-direction: column; }
+        flex-direction: column;
+        height: none;
+        margin-top: 0px; }
         body main section ul li {
-          height: 400px; }
+          height: 200px; }
           body main section ul li:nth-child(1), body main section ul li:nth-child(2), body main section ul li:nth-child(3) {
             grid-row: none;
             grid-column: none; }
@@ -21,9 +23,10 @@
 
   main section ul {
     display: grid;
-    height: 0px;
+    height: calc(100vh - 100px);
     grid-template-columns: 250px 250px;
-    grid-template-rows: 250px 250px; }
+    grid-template-rows: 250px 250px;
+    margin-top: 6px; }
     main section ul li:nth-child(1) {
       grid-row: 1;
       grid-column: 1; }

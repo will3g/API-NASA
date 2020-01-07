@@ -1,7 +1,7 @@
 {
 "version": 3,
 "mappings": "AAAA,eAAU;EAEN,QAAQ,ECCD,IAAI;EDCX,kBAAG;IACC,OAAO,ECCC,IAAI;IDAZ,WAAW,ECCC,QAAQ;IDApB,eAAe,ECCC,MAAM;IDAtB,UAAU,EAAE,YAAmD;IAC/D,iBAAiB,ECEC,SAAS;IDD3B,qBAAG;MACC,UAAU,ECEA,kBAAiB;MDD3B,KAAK,ECEA,SAAS;MDDd,KAAK,ECEA,IAAI;MDDT,OAAO,ECEA,GAAG;MDDV,aAAa,ECEA,IAAI;MDDjB,UAAU,ECEA,MAAM;MDDhB,WAAW,EAAE,qBAAoD;MACjE,SAAS,ECGA,MAAM;IDDnB,+BAAe;MACX,UAAU,ECEW,0BAA0B;IDAnD,+BAAe;MACX,iBAAiB;MACjB,UAAU,ECDW,OAAO;IDGhC,+BAAe;MACX,UAAU,ECHa,0BAA0B;IDKrD,+BAAe;MACX,UAAU,ECLY,0BAA0B;IDOpD,+BAAe;MACX,UAAU,ECPY,0BAA0B",
-"sources": ["../../../server/style/scss/models/content-model.scss","../../../server/style/scss/content-one.scss"],
+"sources": ["../../../server/style/scss/models/content-model.scss","../../../server/style/scss/content-two.scss"],
 "names": [],
-"file": "content-one.css"
+"file": "content-two.css"
 }
