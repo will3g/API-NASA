@@ -8,8 +8,7 @@
       body main section ul {
         display: flex;
         flex-direction: column;
-        height: none;
-        margin-top: 0px; }
+        margin-bottom: 0px; }
         body main section ul li {
           height: 200px; }
           body main section ul li:nth-child(1), body main section ul li:nth-child(2), body main section ul li:nth-child(3) {
@@ -23,10 +22,9 @@
 
   main section ul {
     display: grid;
-    height: calc(100vh - 100px);
     grid-template-columns: 250px 250px;
     grid-template-rows: 250px 250px;
-    margin-top: 6px; }
+    margin-bottom: 15px; }
     main section ul li:nth-child(1) {
       grid-row: 1;
       grid-column: 1; }
@@ -38,10 +36,18 @@
       grid-row: 2;
       grid-column: 1; }
     main section ul li:nth-child(4) {
+      display: grid;
       grid-row: 2;
       grid-column: 2; }
     main section ul li:nth-child(5) {
-      display: none; } }
+      display: none; }
+
+  main #section-one ul li:nth-child(4),
+  main #section-two ul li:nth-child(4) {
+    display: flex; }
+  main #section-one ul li:nth-child(5),
+  main #section-two ul li:nth-child(5) {
+    display: none; } }
 @media screen and (max-width: 767px) {
   header nav div > a {
     margin-left: 44%; }
@@ -77,6 +83,11 @@
       grid-column: 4; }
     main section ul li:nth-child(4), main section ul li:nth-child(5) {
       display: none; } }
+@media screen and (min-width: 768px) {
+  main #section-one ul li:nth-child(4), main #section-one ul li:nth-child(5),
+  main #section-two ul li:nth-child(4),
+  main #section-two ul li:nth-child(5) {
+    display: none; } }
 @media screen and (min-width: 940px) {
   header nav div ul {
     margin-left: 35%; }
@@ -85,7 +96,12 @@
     grid-template-columns: 250px 180px 180px 250px;
     grid-template-rows: 220px 220px; }
     main section ul li:nth-child(4), main section ul li:nth-child(5) {
-      display: flex; } }
+      display: flex; }
+
+  main #section-one ul li:nth-child(4), main #section-one ul li:nth-child(5),
+  main #section-two ul li:nth-child(4),
+  main #section-two ul li:nth-child(5) {
+    display: flex; } }
 @media screen and (min-width: 992px) {
   header nav div ul {
     margin-left: 39%; }

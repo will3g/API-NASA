@@ -2,8 +2,8 @@
 $body-media-screen-539px-display: block;
 $header-media-screen-539px-height:100px;
 $main-section-media-screen-539px-flex-direction:column;
-$main-section-ul-calc-height-539px:none;
-$main-section-ul-margin-top-539px: 0px;
+//$main-section-ul-calc-height-539px:none;
+$main-section-ul-margin-bottom-539px: 0px;
 $ul-media-screen-539px-display:flex;
 $ul-media-screen-539px-flex-direction:column;
 $ul-li-media-screen-539px-height:200px;
@@ -14,8 +14,8 @@ $ul-li-nth-child-media-screen-539px-display:none;
 $body-media-screen-540px-display:grid;
 $main-section-ul-media-screen-540px-display:grid;
 $main-section-ul-media-screen-540px-height:0px;
-$main-section-ul-calc-height-540px: calc(100vh - 100px);
-$main-section-ul-margin-top-540px: 6px;
+//$main-section-ul-calc-height-540px: calc(100vh - 100px);
+$main-section-ul-margin-bottom-540px: 15px;
 $main-section-ul-media-screen-540px-grid-template-columns:250px 250px;
 $main-section-ul-media-screen-540px-grid-template-rows:250px 250px;
 $main-section-ul-li-nth-child-one-media-screen-540px-grid-row:1;
@@ -49,6 +49,8 @@ $main-section-ul-li-nth-child-four-media-screen-768px-grid-column:4;
 $main-section-ul-li-nth-child-five-media-screen-768px-grid-row:2;
 $main-section-ul-li-nth-child-five-media-screen-768px-grid-column:4;
 $main-section-ul-li-nth-child-media-screen-768px-display:none;
+// MEDIA SCREEN MAX-WIDTH-939PX
+$main-section-ul-li-nth-child-media-screen-939px-display:none;
 // MEDIA SCREEN MIN-WIDTH-940PX
 $header-nav-div-ul-media-screen-940px-margin-left:35%;
 $main-section-ul-media-screen-940px-grid-template-columns:250px 180px 180px 250px;
