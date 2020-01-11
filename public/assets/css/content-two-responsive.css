@@ -3,53 +3,53 @@
     display: block; }
     body header {
       height: 100px; }
-    body main #section-one {
+    body main #section-two {
       flex-direction: column; }
-      body main #section-one ul {
+      body main #section-two ul {
         display: flex;
         flex-direction: column;
         margin-bottom: 0px; }
-        body main #section-one ul li {
+        body main #section-two ul li {
           height: 200px; }
-          body main #section-one ul li:nth-child(1), body main #section-one ul li:nth-child(2), body main #section-one ul li:nth-child(3) {
+          body main #section-two ul li:nth-child(1), body main #section-two ul li:nth-child(2), body main #section-two ul li:nth-child(3) {
             grid-row-start: none;
             grid-row-end: none;
             grid-column-start: none;
             grid-column-end: none; }
-          body main #section-one ul li:nth-child(4), body main #section-one ul li:nth-child(5) {
+          body main #section-two ul li:nth-child(4), body main #section-two ul li:nth-child(5) {
             display: none; } }
 @media screen and (min-width: 540px) {
   body {
     display: grid; }
 
-  main #section-one ul {
+  main #section-two ul {
     display: grid;
     grid-template-columns: 250px 250px;
     grid-template-rows: 250px 250px;
     margin-bottom: 15px; }
-    main #section-one ul li:nth-child(1) {
+    main #section-two ul li:nth-child(1) {
       grid-row-start: 1;
       grid-row-end: 1;
       grid-column-start: 1;
       grid-column-end: 1; }
-    main #section-one ul li:nth-child(2) {
+    main #section-two ul li:nth-child(2) {
       /* foto do dia */
       grid-row-start: 1;
       grid-row-end: 1;
       grid-column-start: 2;
       grid-column-end: 2; }
-    main #section-one ul li:nth-child(3) {
+    main #section-two ul li:nth-child(3) {
       grid-row-start: 2;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 1; }
-    main #section-one ul li:nth-child(4) {
+    main #section-two ul li:nth-child(4) {
       display: grid;
       grid-row-start: 2;
       grid-row-end: 2;
       grid-column-start: 2;
       grid-column-end: 2; }
-    main #section-one ul li:nth-child(5) {
+    main #section-two ul li:nth-child(5) {
       display: none; }
 
   main #section-one ul li:nth-child(4),
@@ -70,36 +70,36 @@
     display: block;
     margin-left: 19%; }
 
-  main #section-one ul {
+  main #section-two ul {
     grid-template-columns: 350px 365px;
     grid-template-rows: 250px 250px; }
-    main #section-one ul li:nth-child(1) {
-      grid-row-start: 1;
-      grid-row-end: 1;
-      grid-column-start: 1;
-      grid-column-end: 1; }
-    main #section-one ul li:nth-child(2) {
+    main #section-two ul li:nth-child(1) {
       grid-row-start: 1;
       grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 1; }
+    main #section-two ul li:nth-child(2) {
+      grid-row-start: 1;
+      grid-row-end: 1;
       grid-column-start: 2;
       grid-column-end: 2; }
-    main #section-one ul li:nth-child(3) {
+    main #section-two ul li:nth-child(3) {
       /* foto do dia */
       grid-row-start: 2;
       grid-row-end: 2;
-      grid-column-start: 1;
-      grid-column-end: 1; }
-    main #section-one ul li:nth-child(4) {
+      grid-column-start: 2;
+      grid-column-end: 2; }
+    main #section-two ul li:nth-child(4) {
       grid-row-start: 2;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 1; }
-    main #section-one ul li:nth-child(5) {
+    main #section-two ul li:nth-child(5) {
       grid-row-start: 1;
       grid-row-end: 3;
       grid-column-start: 4;
       grid-column-end: 4; }
-    main #section-one ul li:nth-child(4), main #section-one ul li:nth-child(5) {
+    main #section-two ul li:nth-child(4), main #section-two ul li:nth-child(5) {
       display: flex; } }
 @media screen and (min-width: 768px) {
   main #section-one ul li:nth-child(4), main #section-one ul li:nth-child(5),
@@ -115,66 +115,66 @@
   main #section-two ul li:nth-child(5) {
     display: flex; }
 
-  main #section-one ul {
+  main #section-two ul {
     grid-template-columns: 250px 100px 250px 260px;
     grid-template-rows: 220px 220px; }
-    main #section-one ul li:nth-child(1) {
+    main #section-two ul li:nth-child(1) {
       grid-row-start: 1;
       grid-row-end: 1;
       grid-column-start: 1;
-      grid-column-end: 1; }
-    main #section-one ul li:nth-child(2) {
+      grid-column-end: 3; }
+    main #section-two ul li:nth-child(2) {
       grid-row-start: 1;
-      grid-row-end: 3;
-      grid-column-start: 2;
-      grid-column-end: 4; }
-    main #section-one ul li:nth-child(3) {
+      grid-row-end: 1;
+      grid-column-start: 3;
+      grid-column-end: 3; }
+    main #section-two ul li:nth-child(3) {
       /* foto do dia */
       grid-row-start: 2;
       grid-row-end: 2;
-      grid-column-start: 4;
+      grid-column-start: 2;
       grid-column-end: 4; }
-    main #section-one ul li:nth-child(4) {
+    main #section-two ul li:nth-child(4) {
       grid-row-start: 2;
       grid-row-end: 2;
       grid-column-start: 1;
       grid-column-end: 1; }
-    main #section-one ul li:nth-child(5) {
+    main #section-two ul li:nth-child(5) {
       grid-row-start: 1;
-      grid-row-end: 1;
+      grid-row-end: 3;
       grid-column-start: 4;
       grid-column-end: 4; }
-    main #section-one ul li:nth-child(4), main #section-one ul li:nth-child(5) {
+    main #section-two ul li:nth-child(4), main #section-two ul li:nth-child(5) {
       display: flex; } }
 @media screen and (min-width: 992px) {
   header nav div ul {
     margin-left: 39%; }
 
-  main #section-one ul {
+  main #section-two ul {
     grid-template-columns: 250px 150px 250px 270px; } }
 @media screen and (min-width: 1024px) {
-  main #section-one ul {
+  main #section-two ul {
     grid-template-columns: 250px 170px 250px 270px;
     grid-template-rows: 250px 250px; } }
 @media screen and (min-width: 1150px) {
   header nav div ul {
     margin-left: 47%; }
 
-  main #section-one ul {
+  main #section-two ul {
     grid-template-columns: 280px 200px 290px 310px;
     grid-template-rows: 260px 260px; } }
 @media screen and (min-width: 1250px) {
   header nav div ul {
     margin-left: 49%; }
 
-  main #section-one ul {
+  main #section-two ul {
     grid-template-columns: 260px 240px 320px 300px; } }
 @media screen and (min-width: 1300px) {
   header nav div ul {
     margin-left: 52%; }
 
-  main #section-one ul {
+  main #section-two ul {
     grid-template-columns: 310px 290px 290px 310px;
     grid-template-rows: 270px 270px; } }
 
-/*# sourceMappingURL=content-one-responsive.css.map */
+/*# sourceMappingURL=content-two-responsive.css.map */
