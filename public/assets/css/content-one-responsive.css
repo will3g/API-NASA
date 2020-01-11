@@ -17,7 +17,7 @@
             grid-column-start: none;
             grid-column-end: none; }
           body main #section-one ul li:nth-child(4), body main #section-one ul li:nth-child(5) {
-            display: none; } }
+            display: flex; } }
 @media screen and (min-width: 540px) {
   body {
     display: grid; }

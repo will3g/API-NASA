@@ -3,7 +3,6 @@ $id-section: "#section-two";
 $body-media-screen-539px-display: block;
 $header-media-screen-539px-height:100px;
 $main-section-media-screen-539px-flex-direction:column;
-//$main-section-ul-calc-height-539px:none;
 $main-section-ul-margin-bottom-539px: 0px;
 $ul-media-screen-539px-display:flex;
 $ul-media-screen-539px-flex-direction:column;
@@ -12,7 +11,7 @@ $ul-li-nth-child-media-screen-539px-grid-row-start:none;
 $ul-li-nth-child-media-screen-539px-grid-row-end: none;
 $ul-li-nth-child-media-screen-539px-grid-column-start:none;
 $ul-li-nth-child-media-screen-539px-grid-column-end: none;
-$ul-li-nth-child-media-screen-539px-display:none;
+$ul-li-nth-child-media-screen-539px-display:flex;
 // MEDIA SCREEN MIN-WIDTH-540PX
 $body-media-screen-540px-display:grid;
 $main-section-ul-media-screen-540px-display:grid;
@@ -129,4 +128,4 @@ $header-nav-div-ul-media-screen-1300px-margin-left:52%;
 $main-section-ul-media-screen-1300px-grid-template-columns:310px 290px 290px 310px;
 $main-section-ul-media-screen-1300px-grid-template-rows:270px 270px;
 // IMPORT MODEL
-@import './models/content-responsive-model.scss';
+@import '../models/content-responsive-model.scss';
