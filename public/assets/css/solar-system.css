@@ -1,160 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300);
-html,
-div,
-section,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-    margin: 0;
-    padding: 0;
-}
-
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
-    line-height: 1;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote,
-q {
-    quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-* {
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-section {
-    font-size: 10px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    background-color: #000;
-}
-
 #solar-system,
 #universe,
 #galaxy {
-    margin-top: 60px;
-    width: 90%;
     height: 73%;
 }
 
 #universe {
     z-index: 1;
-    position: absolute;
     overflow: hidden;
     background-position: center 40%;
     background-image: url('../img/background-galaxy.png');
     background-repeat: no-repeat;
     background-position-y: unset;
     background-size: cover;
+    margin-bottom: 15px;
 }
 
 #galaxy {
@@ -1240,15 +1099,18 @@ dl.infos dd span:after {
     border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
-h1 {
+
+/* h1 {
     width: 100%;
     font-weight: 600;
     font-size: 14px;
     text-align: center;
     color: rgba(255, 255, 255, 0.8);
-}
+} */
 
-h1 span,
+
+/* h1 span, */
+
 #navbar h1 a {
     display: inline;
     position: relative;
@@ -1459,39 +1321,25 @@ h1 {
 
 /* --------------------------------------------------------------------------- responsive styles */
 
-@media screen and (max-width: 299px) {
+@media screen and (max-width: 767px) {
+    #animation {
+        display: none;
+        font-size: 0;
+    }
     #universe {
-        font-size: 20%;
+        display: none;
+        font-size: 0;
     }
 }
 
-@media screen and (min-width: 300px) {
-    #universe {
-        font-size: 24%;
+@media screen and (min-width: 768px) {
+    #animation {
+        display: block;
     }
-}
-
-@media screen and (min-width: 500px) {
     #universe {
-        font-size: 36%;
-    }
-}
-
-@media screen and (min-width: 600px) {
-    #universe {
-        font-size: 44%;
-    }
-}
-
-@media screen and (min-width: 760px) {
-    #universe {
-        font-size: 58%;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    #universe {
-        font-size: 73%;
+        font-size: 38%;
+        width: 731px;
+        height: 300px;
     }
     #navbar,
     #controls,
@@ -1501,14 +1349,121 @@ h1 {
     #navbar a {
         display: none;
     }
-    h1 {
-        font-size: 22px;
-        margin-top: 8px;
+    #data {
+        position: absolute;
+        top: 75%;
+        padding: 0;
+        margin-left: 12px;
+    }
+    #data a {
+        display: inline-block;
+        font-size: 20px;
+        padding: 10px 10px;
+    }
+    .data-open #data,
+    .data-close #data {
+        left: 0px;
+    }
+    .controls-open #controls,
+    .controls-close #controls {
+        right: 0px;
+    }
+    #galaxy {
+        margin-top: 92px;
+    }
+}
+
+@media screen and (min-width: 940px) {
+    #universe {
+        font-size: 45%;
+        width: 905px;
+        height: 340px;
+    }
+    #navbar,
+    #controls,
+    #data {
+        background: transparent;
+    }
+    #navbar a {
+        display: none;
     }
     #data {
         position: absolute;
-        top: 55%;
-        margin-left: 10%;
+        top: 78%;
+        margin-left: 7%;
+    }
+    #data a {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px 15px;
+    }
+    .data-open #data,
+    .data-close #data {
+        left: 0px;
+    }
+    .controls-open #controls,
+    .controls-close #controls {
+        right: 0px;
+    }
+    #galaxy {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #universe {
+        font-size: 45%;
+        width: 967px;
+        height: 350px;
+    }
+    #navbar,
+    #controls,
+    #data {
+        background: transparent;
+    }
+    #navbar a {
+        display: none;
+    }
+    #data {
+        position: absolute;
+        top: 79%;
+        margin-left: 9%;
+    }
+    #data a {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px 15px;
+    }
+    .data-open #data,
+    .data-close #data {
+        left: 0px;
+    }
+    .controls-open #controls,
+    .controls-close #controls {
+        right: 0px;
+    }
+    #galaxy {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    #universe {
+        font-size: 45%;
+        width: 967px;
+        height: 350px;
+    }
+    #navbar,
+    #controls,
+    #data {
+        background: transparent;
+    }
+    #navbar a {
+        display: none;
+    }
+    #data {
+        position: absolute;
+        margin-left: 9%;
     }
     #data a {
         display: inline-block;
@@ -1525,27 +1480,72 @@ h1 {
     }
 }
 
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1024px) {
     #universe {
-        font-size: 90%;
-        margin-top: 610px;
-        margin-left: 55px;
-        width: 1235px;
-        height: 460px;
-    }
-    #galaxy {
-        margin-left: 60px;
-    }
-    #data {
-        top: 335px;
+        width: 986px;
     }
 }
 
-@media screen and (min-width: 1600px) {
-    .zoom-close .scale-d #solar-system {
-        margin-left: -120%;
-    }
+@media screen and (min-width: 1150px) {
     #universe {
-        font-size: 200%;
+        width: 1125px;
+    }
+    #galaxy {
+        margin-top: 105px;
+    }
+    #data {
+        top: 76%;
+        margin-left: 15%;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    #universe {
+        font-size: 55%;
+        height: 400px;
+        width: 1165px;
+    }
+    #navbar,
+    #controls,
+    #data {
+        background: transparent;
+    }
+    #navbar a {
+        display: none;
+    }
+    #data {
+        position: absolute;
+        top: 80%;
+        margin-left: 17%;
+    }
+    #data a {
+        display: inline-block;
+        font-size: 20px;
+        padding: 15px 15px;
+    }
+    .data-open #data,
+    .data-close #data {
+        left: 0px;
+    }
+    .controls-open #controls,
+    .controls-close #controls {
+        right: 0px;
+    }
+    #galaxy {
+        margin-top: 120px;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    #universe {
+        font-size: 60%;
+        width: 1245px;
+        height: 460px;
+    }
+    #data {
+        top: 85%;
+    }
+    #galaxy {
+        margin-top: 120px;
     }
 }

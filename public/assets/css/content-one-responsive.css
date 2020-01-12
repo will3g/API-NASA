@@ -8,7 +8,7 @@
       body main #section-one ul {
         display: flex;
         flex-direction: column;
-        margin-bottom: 0px; }
+        margin-bottom: -14px; }
         body main #section-one ul li {
           height: 200px; }
           body main #section-one ul li:nth-child(1), body main #section-one ul li:nth-child(2), body main #section-one ul li:nth-child(3) {
