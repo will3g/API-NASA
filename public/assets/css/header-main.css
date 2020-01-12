@@ -16,29 +16,31 @@ nav > div {
     background-image: url("../img/logo-nasa.png");
     background-repeat: no-repeat;
     background-size: contain; }
-  nav > div ul li a {
-    color: #ffffffb0;
-    margin-top: 25px;
-    padding-bottom: 25px; }
-    nav > div ul li a:hover {
-      border-bottom: 1px solid #ffffffb0; }
-  nav > div ul li:last-child {
-    margin: 4px 0px 20px 30px; }
-    nav > div ul li:last-child .input-field input[type=search] {
-      height: 55px !important;
-      padding-left: 4rem;
-      width: calc(75%);
-      border: 0;
-      -webkit-box-shadow: none;
-      box-shadow: none; }
-    nav > div ul li:last-child .search,
-    nav > div ul li:last-child .search input {
-      border-radius: 50px !important; }
-    nav > div ul li:last-child .search {
-      height: 55px;
-      width: 255px;
-      background: #ffffff08; }
-    nav > div ul li:last-child .search label i {
-      cursor: pointer; }
+  nav > div ul {
+    margin-top: 10px; }
+    nav > div ul li a {
+      color: #ffffffb0;
+      margin-top: 0px;
+      padding-bottom: 0px; }
+      nav > div ul li a:hover {
+        border-bottom: 1px solid #ffffffb0; }
+    nav > div ul li:last-child {
+      margin: 4px 0px 20px 30px; }
+      nav > div ul li:last-child .input-field input[type=search] {
+        height: 55px !important;
+        padding-left: 4rem;
+        width: calc(75%);
+        border: 0;
+        -webkit-box-shadow: none;
+        box-shadow: none; }
+      nav > div ul li:last-child .search,
+      nav > div ul li:last-child .search input {
+        border-radius: 50px !important; }
+      nav > div ul li:last-child .search {
+        height: 55px;
+        width: 255px;
+        background: #ffffff08; }
+      nav > div ul li:last-child .search label i {
+        cursor: pointer; }
 
 /*# sourceMappingURL=header-main.css.map */

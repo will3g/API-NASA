@@ -11,10 +11,12 @@ $icon-nasa-float: left;
 $icon-nasa-background-image: url('../img/logo-nasa.png');
 $icon-nasa-background-repeat: no-repeat;
 $icon-nasa-background-size: contain;
+// UL
+$nav-ul-margin-top: 10px;
 // UL LI A
 $nav-ul-li-a-color: #ffffffb0;
-$nav-ul-li-a-margin-top: 25px;
-$nav-ul-li-a-padding-bottom: 25px;
+$nav-ul-li-a-margin-top: 0px;
+$nav-ul-li-a-padding-bottom: 0px;
 $nav-ul-li-a-hover-border-bottom: 1px solid #ffffffb0;
 // UL LI LAST CHILD (SEARCH)
 $nav-ul-li-last-child-margin: 4px 0px 20px 30px;
