@@ -1,5 +1,10 @@
 // https://api.nasa.gov/planetary/apod?api_key=J2bmLrlUbNdxgPBQqkvNMpl4uIP1mE52WYrpuOpq
 
+let list = [
+       'https://api.nasa.gov/planetary/apod?api_key=J2bmLrlUbNdxgPBQqkvNMpl4uIP1mE52WYrpuOpq', 
+       'https://images-api.nasa.gov/search?q=all%2019&description=planets%20landing&media_type=image', 
+       'https://images-api.nasa.gov/search?q=apollo%2011&description=moon%20landing&media_type=image'];
+
 function render(nameTagImg, nameTagTitle, jsonImage, jsonTitle) {
        let img = document.getElementById(nameTagImg);
        let title = document.getElementById(nameTagTitle);
@@ -13,9 +18,7 @@ function render(nameTagImg, nameTagTitle, jsonImage, jsonTitle) {
 }
 
 const req = (() => {
-       let img = document.getElementById('image-two');
-       let title = document.getElementById('title-two');
-    fetch('https://api.nasa.gov/planetary/apod?api_key=J2bmLrlUbNdxgPBQqkvNMpl4uIP1mE52WYrpuOpq')
+    fetch(list[0])
              .then(res => res.json())
              .then(res => { 
                     const image = res.url;
@@ -25,8 +28,7 @@ const req = (() => {
 })();
 
 const req2 = (() => {
-
-       fetch('https://images-api.nasa.gov/search?q=all%2019&description=planets%20landing&media_type=image')
+       fetch(list[1])
                 .then(res => res.json())
                 .then(res => {
                      const image = res.collection.items[0].links[0].href;
@@ -35,8 +37,8 @@ const req2 = (() => {
                 });
    })();
 
-const req3 = (() => {
-       fetch('https://images-api.nasa.gov/search?q=apollo%2011&description=moon%20landing&media_type=image')
+const req4 = (() => {
+       fetch(list[3])
                 .then(res => res.json())
                 .then(res => { 
                        for (const item in res.collection.items) {
