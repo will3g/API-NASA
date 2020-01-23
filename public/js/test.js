@@ -3,7 +3,11 @@
 let list = [
     'https://api.nasa.gov/planetary/apod?api_key=J2bmLrlUbNdxgPBQqkvNMpl4uIP1mE52WYrpuOpq', 
     'https://images-api.nasa.gov/search?q=all%2019&description=planets%20landing&media_type=image', 
-    'https://images-api.nasa.gov/search?q=apollo%2011&description=moon%20landing&media_type=image'];
+    'https://images-api.nasa.gov/search?q=apollo%2019&description=moon%20landing&media_type=image',
+    'https://images-api.nasa.gov/search?q=nebula&media_type=image',
+    'https://images-api.nasa.gov/search?q=black-hole&media_type=image',
+    'https://images-api.nasa.gov/search?q=telescope&media_type=image'
+];
 
 function render(nameTagImg, nameTagTitle, jsonImage, jsonTitle) {
     let img = document.getElementById(nameTagImg);
@@ -18,18 +22,15 @@ function render(nameTagImg, nameTagTitle, jsonImage, jsonTitle) {
 }
 
 let random = function(min, max) {
-    if (min==null && max==null)
-    return 0;    
+    if (min==null && max==null) return 0;    
        
-    if (max == null) {
-        max = min;
-        min = 0;
-    }
+    if (max == null) max = min; min = 0;
+
     return min + Math.floor(Math.random() * (max - min + 1));
 };
 
-function content(json, item, index = 0) {
-	const news = json.collection.items[item];
+function content(JSON, item, index = 0) {
+	const news = JSON.collection.items[item];
 	return {
 		'img': news.links[index].href,
 		'photographer': news.data[index].photographer,
@@ -40,41 +41,47 @@ function content(json, item, index = 0) {
 	}
 }
 
-const req = (() => {
+function selectArticle(JSON) {
+    const total = JSON.collection.items.length;
+	const item = random(0, total);
+    return content(JSON, item);
+}
+
+function request(indexURL, imgID, txtID) {
+    fetch(list[indexURL])
+        .then(res => res.json())
+        .then(res => {
+            const article = selectArticle(res);
+            render(imgID, txtID, article.img, article.title)
+        });
+}
+
+const req = (() => { // Foto do dia
     fetch(list[0])
         .then(res => res.json())
         .then(res => { 
             const image = res.url;
             const title = res.title;
-            render('image-two', 'title-two', image, title);
+            render('pod-img', 'pod-img', image, title);
         });
+})();
+
+const req1 = (() => {
+    request(3, 'content-img-1', 'content-txt-1');
 })();
 
 const req2 = (() => {
-    fetch(list[1])
-        .then(res => res.json())
-        .then(res => {
-            const total = res.collection.items.length;
-			const item = random(0, total);
-            const obj = content(res, item);
-            render('image-three', 'title-three', obj.img, obj.title)
-            console.log('---- first request -----');
-            console.log(obj.img);
-            console.log(obj.title);
-            
-        });
+    request(2, 'content-img-2', 'content-txt-2');
 })();
 
 const req3 = (() => {
-    fetch(list[2])
-        .then(res => res.json())
-        .then(res => { 
-			const total = res.collection.items.length;
-			const item = random(0, total);
-            const obj = content(res, item);
-            render('content-random-img', 'content-random-txt', obj.img, obj.title)
-            console.log('---- second request -----');
-            console.log(obj.img);
-            console.log(obj.title);
-        });
+    request(4, 'content-img-3', 'content-txt-3');
+})();
+
+const req4 = (() => {
+    request(5, 'content-img-4', 'content-txt-4');
+})();
+
+const req5 = (() => {
+    request(1, 'content-img-5', 'content-txt-5');
 })();
