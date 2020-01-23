@@ -54,9 +54,14 @@ const req2 = (() => {
     fetch(list[1])
         .then(res => res.json())
         .then(res => {
-                const image = res.collection.items[0].links[0].href;
-                const title = res.collection.items[0].data[0].title;
-                render('image-three', 'title-three', image, title);
+            const total = res.collection.items.length;
+			const item = random(0, total);
+            const obj = content(res, item);
+            render('image-three', 'title-three', obj.img, obj.title)
+            console.log('---- first request -----');
+            console.log(obj.img);
+            console.log(obj.title);
+            
         });
 })();
 
@@ -68,5 +73,8 @@ const req3 = (() => {
 			const item = random(0, total);
             const obj = content(res, item);
             render('content-random-img', 'content-random-txt', obj.img, obj.title)
+            console.log('---- second request -----');
+            console.log(obj.img);
+            console.log(obj.title);
         });
 })();
