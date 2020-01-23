@@ -66,7 +66,7 @@ const req3 = (() => {
         .then(res => { 
 			const total = res.collection.items.length;
 			const item = random(0, total);
-			const obj = content(res, item);
-			console.log('OBJ: '+obj);
+            const obj = content(res, item);
+            render('content-random-img', 'content-random-txt', obj.img, obj.title)
         });
 })();
