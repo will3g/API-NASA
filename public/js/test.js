@@ -6,7 +6,11 @@ let list = [
     'https://images-api.nasa.gov/search?q=apollo%2019&description=moon%20landing&media_type=image',
     'https://images-api.nasa.gov/search?q=nebula&media_type=image',
     'https://images-api.nasa.gov/search?q=black-hole&media_type=image',
-    'https://images-api.nasa.gov/search?q=telescope&media_type=image'
+    'https://images-api.nasa.gov/search?q=telescope&media_type=image',
+    'https://images-api.nasa.gov/search?q=comets&media_type=image',
+    'https://images-api.nasa.gov/search?q=falcon-heavy&media_type=image',
+    'https://images-api.nasa.gov/search?q=curiosity&media_type=image',
+    'https://images-api.nasa.gov/search?q=comets&media_type=image'
 ];
 
 function render(nameTagImg, nameTagTitle, jsonImage, jsonTitle) {
@@ -62,26 +66,24 @@ const req = (() => { // Foto do dia
         .then(res => { 
             const image = res.url;
             const title = res.title;
-            render('pod-img', 'pod-img', image, title);
+            render('pod-img', 'pod-txt', image, title);
         });
 })();
 
-const req1 = (() => {
-    request(3, 'content-img-1', 'content-txt-1');
-})();
+(() => request(7, 'content-img-1', 'content-txt-1'))();
 
-const req2 = (() => {
-    request(2, 'content-img-2', 'content-txt-2');
-})();
+(() => request(8, 'content-img-2', 'content-txt-2'))();
 
-const req3 = (() => {
-    request(4, 'content-img-3', 'content-txt-3');
-})();
+(() => request(3, 'content-img-3', 'content-txt-3'))();
 
-const req4 = (() => {
-    request(5, 'content-img-4', 'content-txt-4');
-})();
+(() => request(9, 'content-img-4', 'content-txt-4'))();
 
-const req5 = (() => {
-    request(1, 'content-img-5', 'content-txt-5');
-})();
+(() => request(3, 'content-img-5', 'content-txt-5'))();
+
+(() => request(6, 'content-img-6', 'content-txt-6'))();
+
+(() => request(4, 'content-img-7', 'content-txt-7'))();
+
+(() => request(5, 'content-img-8', 'content-txt-8'))();
+
+(() => request(1, 'content-img-9', 'content-txt-9'))();
