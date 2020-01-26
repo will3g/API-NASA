@@ -1,0 +1,30 @@
+{
+    "name": "API-NASA",
+    "version": "1.0.0",
+    "description": "Apllication without React!!!",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "nodemon src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/will3g/API-NASA.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/will3g/API-NASA/issues"
+    },
+    "homepage": "https://github.com/will3g/API-NASA#readme",
+    "dependencies": {
+        "axios": "^0.19.2",
+        "express": "^4.17.1",
+        "node-fetch": "^2.6.0",
+        "request": "^2.88.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.2"
+    }
+}
