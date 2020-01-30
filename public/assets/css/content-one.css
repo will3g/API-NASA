@@ -4,8 +4,7 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
-    background: center/cover;
-    background-repeat: no-repeat; }
+    background-size: cover; }
     #section-one ul li h3 {
       background: rgba(0, 0, 0, 0.5);
       color: #ffffffb0;
@@ -16,15 +15,25 @@
       font-family: "Aldrich", sans-serif;
       font-size: 1.1rem; }
     #section-one ul li:nth-child(1) {
-      background: url("../img/nebulosa.jpg"); }
+      background: url("../img/logo-nasa.png");
+      background-repeat: no-repeat;
+      background-position: center; }
     #section-one ul li:nth-child(2) {
       /* foto do dia */
-      background: url(""); }
+      background: url("../img/logo-nasa.png");
+      background-repeat: no-repeat;
+      background-position: center; }
     #section-one ul li:nth-child(3) {
-      background: url("../img/nebulosa.jpg"); }
+      background: url("../img/logo-nasa.png");
+      background-repeat: no-repeat;
+      background-position: center; }
     #section-one ul li:nth-child(4) {
-      background: url("../img/nebulosa.jpg"); }
+      background: url("../img/logo-nasa.png");
+      background-repeat: no-repeat;
+      background-position: center; }
     #section-one ul li:nth-child(5) {
-      background: url("../img/nebulosa.jpg"); }
+      background: url("../img/logo-nasa.png");
+      background-repeat: no-repeat;
+      background-position: center; }
 
 /*# sourceMappingURL=content-one.css.map */
