@@ -1,0 +1,53 @@
+- Para matéria quando clicada, deixar foco somente na matéria e travar a tela da home e escurecer:
+
+    position: fixed;
+    z-index: 4550500500505050;
+    width: 60%;
+    height: 90%;
+    max-width: 60%;
+    max-height: 90%;
+    overflow-y: scroll;
+    top: 5%;
+    left: 20%; 
+
+<div class="vai">
+    <h3 id="pod-txt">The Pjjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+    jjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+    jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue
+     Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+     jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjj
+     jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+     </h3>
+
+    <div class="teste">
+        Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+        jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+        jjjjjjjjjjjjjjjjjjjale Blue Dot""The P
+        jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+        jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+        jjjjjale Blue Dot""The Pjjjjjjjjjjjjjjj
+        jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+        jjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""
+        The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+        jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+        jjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjj
+        jjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+        jjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The
+        Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
+    </div>
+</div>
+
+.vai {
+    margin-bottom: -257px !important;
+}
