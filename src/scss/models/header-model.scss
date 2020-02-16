@@ -1,0 +1,58 @@
+nav {
+    background-color: $nav-background-color;
+    >div i,
+    a.sidenav-trigger,
+    a.sidenav-trigger i {
+        height: $nav-search-icon-height;
+        line-height: $nav-search-icon-line-height;
+    }
+}
+
+nav>div {
+    margin-top: $nav-first-div-margin-top;
+    >a {
+        display: $icon-nasa-display;
+        height: $icon-nasa-height;
+        width: $icon-nasa-width;
+        float: $icon-nasa-float;
+        background-image: $icon-nasa-background-image;
+        background-repeat: $icon-nasa-background-repeat;
+        background-size: $icon-nasa-background-size;
+    }
+    ul {
+        margin-top: $nav-ul-margin-top;
+        li {
+            a {
+                color: $nav-ul-li-a-color;
+                margin-top: $nav-ul-li-a-margin-top;
+                padding-bottom: $nav-ul-li-a-padding-bottom;
+                &:hover {
+                    border-bottom: $nav-ul-li-a-hover-border-bottom;
+                }
+            }
+            &:last-child {
+                margin: $nav-ul-li-last-child-margin;
+                .input-field input[type=search] {
+                    height: $nav-ul-li-last-child-input-height;
+                    padding-left: $nav-ul-li-last-child-input-padding-left;
+                    width: $nav-ul-li-last-child-width;
+                    border: $nav-ul-li-last-child-border;
+                    -webkit-box-shadow: $nav-ul-li-last-child-box-shadow;
+                    box-shadow: $nav-ul-li-last-child-box-shadow;
+                }
+                .search,
+                .search input {
+                    border-radius: $nav-ul-li-last-child-search-and-search-input-border-radius;
+                }
+                .search {
+                    height: $nav-ul-li-last-child-search-height;
+                    width: $nav-ul-li-last-child-search-width;
+                    background: $nav-ul-li-last-child-search-background;
+                }
+                .search label i {
+                    cursor: $nav-ul-li-last-child-search-label-i-cursor;
+                }
+            }
+        }
+    }
+}
