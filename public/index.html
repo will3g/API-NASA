@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -17,39 +17,15 @@
     <link rel="stylesheet" href="./assets/css/content-one-responsive.css">
     <link rel="stylesheet" href="./assets/css/content-two-responsive.css">
     <link rel="stylesheet" href="./assets/css/solar-system.css">
+    <link rel="apple-touch-icon" href="/assets/img/icons/icon-192x192.png">
     <link rel="manifest" href="/manifest.json">
     <title>API NASA</title>
 </head>
 
-<!-- 
-    Para matéria quando clicada, deixar foco somente na matéria e travar a tela da home e escurecer:
-    position: fixed;
-    z-index: 4550500500505050;
-    width: 60%;
-    height: 90%;
-    max-width: 60%;
-    max-height: 90%;
-    overflow-y: scroll;
-    top: 5%;
-    left: 20%; 
--->
-
-<!-- <div class="vai">
-    <h3 id="pod-txt">"The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot"</h3>
-<div class="teste">
-Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjale Blue Dot""The Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
-</div>
-</div>
-
-
-.vai {
-    margin-bottom: -257px !important;
-}
-
-
--->
-
 <body>
+    <noscript>
+        <p>Necessário ter javascript habilitado para usar o site</p>
+    </noscript>
     <header>
         <nav>
             <div>
@@ -233,7 +209,16 @@ Pjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj
     <script src="./js/materialize/materialize.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="./js/solar-system.js"></script>
-    <script src="./js/test2.js"></script>
+    <script src="./js/requests.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .then(res => console.info('SERVICE WORKER FUNCIONOU', res))
+                .catch(err => console.error('ServiceWorker registration failed: ', err));
+        } else {
+            console.log('Deu ruim!');
+        }
+    </script>
 </body>
 
 </html>
