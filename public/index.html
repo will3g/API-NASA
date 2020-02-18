@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="./assets/css/content-two-responsive.css">
     <link rel="stylesheet" href="./assets/css/solar-system.css">
     <link rel="apple-touch-icon" href="/assets/img/icons/icon-192x192.png">
-    <link rel="manifest" href="/manifest.json">
+    <link rel="manifest" href="/manifest.webmanifest">
     <title>API NASA</title>
 </head>
 
@@ -50,6 +50,7 @@
         </nav>
     </header>
     <main>
+        <button class="add-button">Adicione NASA em sua página inicial</button>
         <section id="section-one">
             <ul>
                 <li id="content-img-1">
@@ -210,15 +211,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
     <script src="./js/solar-system.js"></script>
     <script src="./js/requests.js"></script>
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('/sw.js')
-                .then(res => console.info('SERVICE WORKER FUNCIONOU', res))
-                .catch(err => console.error('ServiceWorker registration failed: ', err));
-        } else {
-            console.log('Deu ruim!');
-        }
-    </script>
+    <script src="./register-sw.js"></script>
 </body>
 
 </html>

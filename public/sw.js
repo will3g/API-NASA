@@ -1,6 +1,6 @@
 const staicCacheName = 'nasa_1';
-this.addEventListener('install', e => {
-    this.skipWaiting();
+this.addEventListener('beforeinstallprompt', e => {
+    //this.skipWaiting();
     e.waitUntil(
         caches.open(staicCacheName)
             .then(cache => {
@@ -17,15 +17,36 @@ this.addEventListener('install', e => {
                     '/js/materialize/materialize.js',
                     '/js/requests.js',
                     '/assets/img/logo-nasa.png',
-                    '/assets/img/nav-nasa.jpg',
-                    '/ssl/server.key',
-                    '/ssl/server.crt',
-                    '/ssl/ca.crt'
+                    '/assets/img/nav-nasa.jpg'
                 ])
             })
     )
 });
-this.addEventListener('activate', e => {
+this.addEventListener('fetch', function(e) {
+    console.log(e.request.url);
+    e.respondWith(
+      caches.match(e.request).then(function(response) {
+        return response || fetch(e.request);
+      })
+    );
+});
+// self.addEventListener('install', function(e) {
+//     e.waitUntil(
+//       caches.open('video-store').then(function(cache) {
+//         return cache.addAll([
+//           '/pwa-examples/a2hs/',
+//           '/pwa-examples/a2hs/index.html',
+//           '/pwa-examples/a2hs/index.js',
+//           '/pwa-examples/a2hs/style.css',
+//           '/pwa-examples/a2hs/images/fox1.jpg',
+//           '/pwa-examples/a2hs/images/fox2.jpg',
+//           '/pwa-examples/a2hs/images/fox3.jpg',
+//           '/pwa-examples/a2hs/images/fox4.jpg'
+//         ]);
+//       })
+//     );
+//    });
+//this.addEventListener('activate', e => {
     // e.waitUntil(
     //     caches.keys().then(cachesNames => {
     //         return Promise.all(
@@ -35,8 +56,8 @@ this.addEventListener('activate', e => {
     //         )
     //     })
     // )
-})
-this.addEventListener('fetch', e => {
+//})
+//this.addEventListener('fetch', e => {
     // e.respondWith(
     //     caches.match(e.resquest)
     //     .then(response => {
@@ -46,4 +67,4 @@ this.addEventListener('fetch', e => {
     //         return caches.match('/');
     //     })
     // )
-})
+//})
