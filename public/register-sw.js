@@ -1,19 +1,16 @@
 // Register service worker to control making site work offline
-
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker
-		.register('/sw.js')
-		.then(function () { console.log('Service Worker Registered'); });
+		.register('/sw.js');
 }
 
 // Code to handle install prompt on desktop
-
 let deferredPrompt;
 const btnPwa = document.getElementById('btn-pwa');
 const closePwa = document.getElementById('close-pwa');
 const addBtn = document.querySelector('.add-button');
 
-window.addEventListener('beforeinstallprompt', (e) => {
+function registerSW(e) {
 	// Prevent Chrome 67 and earlier from automatically showing the prompt
 	e.preventDefault();
 	// Stash the event so it can be triggered later.
@@ -22,7 +19,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 	setTimeout(function () {
 		// Update UI to notify the user they can add to home screen
 		btnPwa.style.visibility = 'visible';
-	}, 3000);
+	}, 5000);
 
 	closePwa.addEventListener('click', function (e) {
 		e.preventDefault();
@@ -45,4 +42,10 @@ window.addEventListener('beforeinstallprompt', (e) => {
 			deferredPrompt = null;
 		});
 	});
+}
+
+window.addEventListener('beforeinstallprompt', (e) => {
+	if (/Mobile|mobile|Android|android|Iphone|iphone|Ios|ios/.test(navigator.userAgent)) {
+		this.registerSW(e);
+	}
 });
