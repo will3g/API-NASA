@@ -12,6 +12,8 @@ const list = [
     `${baseURL}/apollo-50-years`,     //8
 ]
 
+let data = [];
+
 function render(nameTagImg, nameTagTitle, jsonImage, jsonTitle) {
     let img = document.getElementById(nameTagImg);
     let title = document.getElementById(nameTagTitle);
@@ -28,7 +30,8 @@ function request(indexURL, imgID, txtID) {
     fetch(list[indexURL])
       .then(res => res.json())
       .then(res => {
-        render(imgID, txtID, res.img, res.title)
+        render(imgID, txtID, res.img, res.title);
+        data.push(res);
       });
 }
 

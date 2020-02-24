@@ -6,7 +6,7 @@ const token = require('./auth');
 const Article = require('./articles');
 
 const routes = new Router();
-
+//chrome://flags/#unsafely-treat-insecure-origin-as-secure
 routes.get('/apod', (req, res) => {
 	axios.get(`https://api.nasa.gov/planetary/apod?api_key=${token}`)
 		.then(json => {
