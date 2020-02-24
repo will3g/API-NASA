@@ -1,11 +1,11 @@
 {
-    "name": "API-NASA",
+    "name": "api-nasa",
     "version": "1.0.0",
     "description": "Apllication without React!!!",
     "main": "index.js",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "dev": "nodemon src/server.js"
+        "start": "nodemon src/server.js"
     },
     "repository": {
         "type": "git",
